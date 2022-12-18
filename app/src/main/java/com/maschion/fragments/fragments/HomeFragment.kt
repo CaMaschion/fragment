@@ -21,11 +21,4 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
-    //só interegimos com a interface depois do método onViewCreated
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.textView.text = "passei no onCreateView"
-    }
 }
