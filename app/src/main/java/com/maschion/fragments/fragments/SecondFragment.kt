@@ -39,8 +39,7 @@ class SecondFragment : Fragment() {
 
     private fun submitInfoToFragment(name: String, age: String) {
         val bundle = bundleOf(
-            "USER_NAME" to name,
-            "USER_AGE" to age
+            "USER" to User(name, age)
         )
 
         //****passando dados para o fragment result, pra isso *****
