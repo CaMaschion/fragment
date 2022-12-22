@@ -3,6 +3,7 @@ package com.maschion.fragments
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.os.bundleOf
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import com.maschion.fragments.databinding.ActivityMainBinding
@@ -19,32 +20,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.home.setOnClickListener {
-
-            supportFragmentManager.commit {
-                setReorderingAllowed(true)
-                add<HomeFragment>(binding.fragmentContainerView.id)
-                addToBackStack(null)
-            }
-
-        }
-
-        binding.secondButton.setOnClickListener {
-
-            supportFragmentManager.commit {
-                setReorderingAllowed(true)
-                add<SecondFragment>(binding.fragmentContainerView.id)
-                addToBackStack(null)
-            }
-
-        }
-
-            //pilha de retorno
-
-        binding.showLogs.setOnClickListener {
-            showBackStackFragments()
-
-        }
 
     }
 

@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
 
             childFragmentManager.commit {
                 setReorderingAllowed(true)
-                add<ThirdFragment>(binding.fragmentContainerView2.id)
+//                add<ThirdFragment>(binding.fragmentContainerView2.id)
             }
         }
     }
